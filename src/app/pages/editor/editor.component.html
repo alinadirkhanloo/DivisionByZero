@@ -1,0 +1,58 @@
+<div class="section">
+  <div class="section sec2 text-center margin-top">
+    <h2 class="title text-center">ایجاد آگهی</h2>
+    <div class="container text-right">
+      <form class="contact-form">
+          <label class="tim-title">عنوان</label>
+          <div class="container card">
+            <textarea class="form-control w3-margin-top w3-margin-bottom" rows="4" placeholder="عنوان متن را وارد نمایید ..."></textarea>
+          </div>
+          
+          <label class="tim-title">خلاصه</label>
+          <div class="container card">
+            <textarea class="form-control w3-margin-top w3-margin-bottom" rows="4" placeholder="خلاصه متن را وارد نمایید ..."></textarea>
+          </div>
+
+          <label class="tim-title">متن</label>
+          <div class="w3-panel border card" style="padding:0;">
+            <ckeditor [editor]="Editor"  placeholder="متن را وارد نمایید..." data="<p></p>"></ckeditor>
+          </div>
+
+
+<!--
+          <label>chips</label>
+          <div class="chips">
+            <mat-form-field class="example-chip-list">
+              <mat-chip-list #chipList aria-label="Fruit selection">
+                <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+                        [removable]="removable" (removed)="remove(fruit)">
+                  {{fruit.name}}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input placeholder="New fruit..."
+                      [matChipInputFor]="chipList"
+                      [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                      [matChipInputAddOnBlur]="addOnBlur"
+                      (matChipInputTokenEnd)="add($event)">
+              </mat-chip-list>
+            </mat-form-field>
+          </div>
+          -->
+          <div class="row">
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-danger btn-round"><i class="fa fa-send"></i>انتشار </button>
+            </div>
+            <div class="col-md-6">
+                <!--<label>Email</label>
+                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                </div>-->
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>

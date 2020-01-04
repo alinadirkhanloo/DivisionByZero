@@ -1,0 +1,10 @@
+::ng-deep .ck.ck-editor__editable_inline[dir=ltr]{
+    direction: rtl;
+    text-align: right;
+}
+::ng-deep .ck-editor__editable_inline{
+    min-height: 400px;
+}
+.sec2{
+    background-color: #fdfdfb!important;
+}

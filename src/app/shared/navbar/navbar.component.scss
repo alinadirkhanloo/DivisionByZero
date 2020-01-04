@@ -1,0 +1,22 @@
+.dropdown .dropdown-menu .dropdown-item{
+    padding:10px 15px!important;
+}
+@media screen and (max-width: 991px){
+    .nav-item .nav-link{
+        color: #9A9A9A !important;
+    }
+    .nav-item .nav-link:hover{
+        color: rgb(53, 53, 53) !important;
+    }
+    .dropdown2:hover{
+        color: rgb(53, 53, 53) !important;
+    }
+
+}
+.nav-item .nav-link{
+    color: rgb(93, 93, 93) !important;
+}
+.nav-item .nav-link:hover{
+    color: #fff !important;
+    background-color: #f7765f!important;
+}

@@ -1,0 +1,160 @@
+<div class="section">
+  <div class="section sec2 text-center margin-top">
+    <div class="container">
+      <div class="row">
+        <div class="d"style="width:12%; margin: 0 auto">
+          <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+        </div>
+        <div class="col-sm-2 text-center">
+            <h5>Erik Faker</h5>
+            <p>1398/08/08 , 10 min</p>
+            <button type="button" class="btn btn-outline-danger btn-round w3-margin-top" placement="top"
+              ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on right">
+              on right
+            </button>
+        </div>
+        <div class="col-sm-8 text-left">
+          <div class="row" dir="ltr">
+            <div class="col-sm-1">
+              <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-bookmark"></i></button>
+            </div>
+            <div class="col-sm-1">
+              <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-twitter"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container">
+    <hr/>
+    <h2 class="title text-center margin-top">عنوان</h2>
+      <div class="blog-content text-right" (textSelect)="renderRectangles( $event )">
+        <p>انگولار جی‌اس یک چهارچوب وب‌ اپلیکیشن متن باز است که اولین بار در سال ۲۰۰۹ توسط میسکو هوری و آدام آبرونز توسعه یافت. در حال حاضر این فریم‌ورک توسط گوگل توسعه داده می‌شود و آخرین نسخه آن 1.4.3 است.</p>
+        <!---<textarea highlight-js [options]="{}" [lang]="'typescript'">
+              /* tslint:disable */
+            import { Component } from '@angular/core';
+
+            @Component({
+                selector: 'demo',
+                templateUrl: './demo.component.html',
+                styleUrls: ['./demo.component.scss']
+            })
+            export class DemoComponent {
+                switchStatus: boolean = true;
+            }
+        </textarea>->
+        <p>انگولار جی‌اس یک چهارچوب وب‌ اپلیکیشن متن باز است که اولین بار در سال ۲۰۰۹ توسط میسکو هوری و آدام آبرونز توسعه یافت. در حال حاضر این فریم‌ورک توسط گوگل توسعه داده می‌شود و آخرین نسخه آن 1.4.3 است.</p>
+ <p *ngFor="let i of [ 1, 2, 3, 4, 5, 6 ]">
+                Do I still Love you? Absolutely. There is not a doubt in my mind. Through
+                all my mind, my ego&hellip; I was always faithful in my Love for you.
+                That I made you doubt it, that is the great mistake of a Life full of
+                mistakes. The truth doesn't set us free, Robin. I can tell you I Love you
+                as many times as you can stand to hear it and all that does, the only
+                thing, is remind us&hellip; that Love is not enough. Not even close.
+            </p>
+ 
+            <!--
+                The host rectangle has to be contained WITHIN the element that has the
+                [textSelect] directive because the rectangle will be absolutely
+                positioned relative to said element.
+            -->
+            <div
+                *ngIf="hostRectangle"
+                class="indicator"
+                [style.left.px]="hostRectangle.left"
+                [style.top.px]="hostRectangle.top"
+                [style.width.px]="hostRectangle.width"
+                [style.height.px]="0">
+ 
+                <div class="indicator__cta">
+                    <!--
+                        NOTE: Because we DON'T WANT the selected text to get deselected
+                        when we click on the call-to-action, we have to PREVENT THE
+                        DEFAULT BEHAVIOR and STOP PROPAGATION on some of the events. The
+                        byproduct of this is that the (click) event won't fire. As such,
+                        we then have to consume the click-intent by way of the (mouseup)
+                        event.
+                    -->
+                    
+                    <div class="row indicator__cta-link text-center" style="width: 200px;padding:0;">
+                      <div class="col-md-3 sel w3-padding">
+                        <a
+                            (mousedown)="$event.preventDefault()"
+                            (mouseup)="$event.stopPropagation(); shareSelection()"
+                            class="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3 sel w3-padding">
+                        <a
+                            (mousedown)="$event.preventDefault()"
+                            (mouseup)="$event.stopPropagation(); shareSelection()"
+                            class="">
+                            <i class="fa fa-paint-brush"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3 sel w3-padding">
+                        <a
+                            (mousedown)="$event.preventDefault()"
+                            (mouseup)="$event.stopPropagation(); shareSelection()"
+                            class="">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3 sel w3-padding">
+                        <a
+                            (mousedown)="$event.preventDefault()"
+                            (mouseup)="$event.stopPropagation(); shareSelection()"
+                            class="">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+         </div>
+ 
+        <div>
+            <p *ngFor="let i of [ 1, 2, 3 ]">
+                This is some text after the active selection zone.
+            </p>
+        </div>
+      
+      
+      </div>
+      <div class="section">
+      <hr />
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="row text-right">
+                <div class="col-sm-1">
+                  <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-bookmark"></i></button>
+                </div>
+                <div class="col-sm-1">
+                  <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-heart"></i></button>
+                </div>
+                <div class="col-sm-1">
+                  <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-twitter"></i></button>
+                </div>
+                <div class="col-sm-1">
+                  <button _ngcontent-c4="" class="btn btn-danger btn-just-icon" type="button"><i _ngcontent-c4="" class="fa fa-comment"></i></button>
+                </div>
+                <div class="col-sm-1">
+                  <button _ngcontent-c5="" class="btn btn-danger btn-round" type="button">Danger</button>
+                </div>                
+              </div>
+            </div>
+            <div class="col-sm-6" dir="ltr">
+              <div class="col-sm-6 text-left" >
+                <ngb-rating class="w3-xxlarge" [(rate)]="currentRate" [max]="5"></ngb-rating>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500" dir="ltr">
+    <div class="container">
+        <div class="navbar-translate">
+        <a href="home" class="navbar-brand" style="color:#66615B;">Division<span class="w3-xlarge">By</span>Zero</a>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler" dir="rtl">
+            <ul class="navbar-nav text-right">
+                <!--<li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        <p class="d-lg-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="d-lg-none">Facebook</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                        <p class="d-lg-none">Instagram</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial/paper-kit-2-angular" target="_blank">
+                        <i class="fa fa-github"></i>
+                        <p class="d-lg-none">GitHub</p>
+                    </a>
+                </li>-->
+                <li class="nav-item drop" *ngIf="!isLogin()">
+                    <div ngbDropdown class="dropdown" placement="bottom-left">
+                        <div _ngcontent-c7="" class="img-details">
+                            <div _ngcontent-c7="" class="author w3-margin">
+                                <img _ngcontent-c7="" alt="Circle Image" id="dropdownBasic1" ngbDropdownToggle class="img-thumbnail img-no-padding img-responsive" src="assets/img/faces/prof-img.jpg">
+                            </div>
+                        </div>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic2" class="dropdown-danger dropdown-menu-right text-center" style="margin-top: 15px;margin-right: 40px;">
+                            <a class="dropdown-item drop " href="#/user-profile">پروفایل</a>
+                            <a class="dropdown-item drop" (click)="sign_out()">خروج</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a href="#/landing" class="nav-link btn-round" > صفحه اصلی
+                    <!--<i class="nc-icon nc-app w3-padding"></i>-->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#/category" class="nav-link btn-round" >لیست دسته بندی موضوعات
+                    <!--<i class="nc-icon nc-app w3-padding"></i>-->
+                    </a>
+                </li>
+
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <div ngbDropdown class="dropdown" placement="bottom-left">
+                        <a class="nav-link btn-round" id="dropdownBasic1" ngbDropdownToggle>آگهی</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right text-right">
+                            <a class="dropdown-item dropdown2" href="#/banner-editor">ایجاد آگهی</a>
+                            <a class="dropdown-item dropdown2" href="#/banners">مشاهده همه آگهی ها</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item" *ngIf="isHome()">
+                    <a href="#/login" class="btn btn-danger btn-round">ورود/ثبت نام</a>
+                </li>
+                <!--<li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
+                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                </li>
+                <li class="nav-item" *ngIf="isDocumentation()">
+                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
